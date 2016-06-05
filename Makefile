@@ -8,7 +8,7 @@ run:
 	docker run --rm -it \
 		--privileged \
 		-e "DIND=true" \
-		-e "BUILDKITE_AGENT_TOKEN=5af477ec222a14398090a8960ee184e4a4b3bb109645c8f1f7" \
+		-e BUILDKITE_AGENT_TOKEN \
 		$(IMAGE)
 
 push:
